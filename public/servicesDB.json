@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "name": "Louise Collins",
+      "img": "https://cdn.searchenginejournal.com/wp-content/uploads/2021/02/seo-content-marketer-60379220866ed-760x400.png",
+      "price": 22665,
+      "description": "Writing clear marketing copy to promote our products/services. Preparing well-structured drafts using Content Management Systems."
+    },
+    {
+      "id": 2,
+      "name": "Manuela Peck",
+      "img": "https://cdn.searchenginejournal.com/wp-content/uploads/2021/02/seo-content-marketer-60379220866ed-760x400.png",
+      "price": 19854,
+      "description": "Writing clear marketing copy to promote our products/services. Preparing well-structured drafts using Content Management Systems."
+    },
+    {
+      "id": 3,
+      "name": "Petra Conway",
+      "img": "https://cdn.searchenginejournal.com/wp-content/uploads/2021/02/seo-content-marketer-60379220866ed-760x400.png",
+      "price": 4767,
+      "description": "Writing clear marketing copy to promote our products/services. Preparing well-structured drafts using Content Management Systems."
+    }
+  ]
