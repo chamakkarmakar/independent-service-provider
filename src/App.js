@@ -9,6 +9,7 @@ import Header from './Pages/Shared/Header/Header';
 import NotFound from './Pages/Shared/NotFound/NotFound';
 import Login from './Pages/Sign-In-Up/Login/Login';
 import Register from './Pages/Sign-In-Up/Register/Register';
+import RequireAuth from './Pages/Sign-In-Up/RequiredAuth/RequiredAuth';
 
 
 function App() {
@@ -18,7 +19,11 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/home' element={<Home />}></Route>
-        <Route path='/service/:serviceId' element={<Checkout />}></Route>
+        <Route path='/service/:serviceId' element={
+          <RequireAuth>
+            <Checkout />
+          </RequireAuth>
+        }></Route>
         <Route path='/services' element={<Services />}></Route>
         <Route path='/login' element={<Login />}></Route>
         <Route path='/register' element={<Register />}></Route>

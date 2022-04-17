@@ -9,8 +9,6 @@ const Register = () => {
     const [
         createUserWithEmailAndPassword,
         user,
-        loading,
-        error,
     ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
     const emailRef = useRef('');
     const passwordRef = useRef('');
@@ -20,7 +18,7 @@ const Register = () => {
 
     const handleRegister = event => {
         event.preventDefault();
-        const name = nameRef.current.value;
+        // const name = nameRef.current.value;
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
 
