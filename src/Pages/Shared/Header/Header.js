@@ -5,8 +5,8 @@ import './Header.css';
 
 const Header = () => {
     return (
-        <div>
-            <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+        <>
+            <Navbar collapseOnSelect expand="lg" bg="light" variant="light" sticky="top">
                 <Container>
                     <Navbar.Brand as={Link} to="/">Service Provider</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -20,7 +20,7 @@ const Header = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </div>
+        </>
     );
 };
 
