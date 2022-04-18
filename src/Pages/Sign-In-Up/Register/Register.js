@@ -1,27 +1,35 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import './Register.css';
 
 const Register = () => {
     const [
         createUserWithEmailAndPassword,
-        user,error
+        user,loading,error
     ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
+    const [updateProfile, updating, updateError] = useUpdateProfile(auth);
+
     const emailRef = useRef('');
     const passwordRef = useRef('');
     const nameRef = useRef('');
 
     const navigate = useNavigate();
 
+     if(loading || updating){
+        return <Loading></Loading>
+    }
     const handleRegister = event => {
         event.preventDefault();
-        // const name = nameRef.current.value;
+        const name = nameRef.current.value;
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
+
+        updateProfile({ displayName: name });
 
         createUserWithEmailAndPassword(email, password);
     }
