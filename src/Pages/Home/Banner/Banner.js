@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Carousel } from 'react-bootstrap';
-
+import { Button, Carousel } from 'react-bootstrap';
+import './Banner.css';
 const Banner = () => {
     const [index, setIndex] = useState(0);
 
@@ -8,43 +8,42 @@ const Banner = () => {
         setIndex(selectedIndex);
     };
     return (
-        <div className='mx-auto'>
+        <div className='slider'>
             <Carousel activeIndex={index} onSelect={handleSelect}>
                 <Carousel.Item>
                     <img
-                        className="d-block w-100  " height={500}
-                        src="https://www.betterteam.com/images/content-writer-job-description-4252x2845-20201118.jpeg?crop=40:21,smart&width=1200&dpr=2"
+                        className="d-block w-100  " 
+                        src="http://demo.glowlogix.com.pk/html/lawyer/images/slider/banner2.jpg"
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3>I Will Fight For a Dismissal</h3>
+                    <Button href='#consult' variant="primary">Free Consultation</Button>
+
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="d-block w-100  " height={500}
-                        src="https://www.betterteam.com/images/content-writer-job-description-4252x2845-20201118.jpeg?crop=40:21,smart&width=1200&dpr=2"
+                        className="d-block w-100  " 
+                        src="http://demo.glowlogix.com.pk/html/lawyer/images/slider/banner.jpg"
                         alt="Second slide"
                     />
-
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h3>Independene In Telling Truth Makes The Difference</h3>
+                    <Button href='#consult' variant="primary">Free Consultation</Button>
+
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="d-block w-100  " height={500}
-                        src="https://www.betterteam.com/images/content-writer-job-description-4252x2845-20201118.jpeg?crop=40:21,smart&width=1200&dpr=2"
+                        className="d-block w-100  " 
+                        src="https://themegeniuslab.com/html/juristic-live-cp/assets/images/slider/slide-1.jpg"
                         alt="Third slide"
                     />
-
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                        </p>
+                    <h3>Always Fight For Rights</h3>
+                    <Button href='#consult' variant="primary">Free Consultation</Button>
+
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

@@ -11,13 +11,13 @@ const Service = ({ service }) => {
     }
     return (
         <div className='service'>
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={img} />
+            <Card style={{ width: '20rem' }} className="shadow-lg">
+                <Card.Img variant="top" src={img} height={250}/>
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
                     <Card.Text>{description}</Card.Text>
                     <Card.Text> <strong>Price:</strong> {price}</Card.Text>
-                    <Button onClick={() => navigateToCheckout(id)} variant="primary">Go somewhere</Button>
+                    <Button onClick={() => navigateToCheckout(id)} variant="primary">Get The Service</Button>
                 </Card.Body>
             </Card>
         </div>
