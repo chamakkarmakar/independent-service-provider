@@ -6,14 +6,14 @@ import auth from '../../../firebase.init';
 const SocialLogin = () => {
     const [signInWithGoogle, user,error] = useSignInWithGoogle(auth);
     const navigate = useNavigate();
-    let errorElement;
+    // let errorElement;
     if (user ) {
         navigate('/home');
     }
 
-    if (error ) {
-        errorElement = <p className='text-danger'>Error: {error?.message}</p>
-    }
+    // if (error ) {
+    //     errorElement = <p className='text-danger'>Error: {error?.message}</p>
+    // }
     return (
         <div>
             <div className='d-flex align-items-center'>
@@ -21,7 +21,7 @@ const SocialLogin = () => {
                 <p className='mt-2 px-2'>OR</p>
                 <div style={{ height: '1px' }} className='bg-primary w-50'></div>
             </div>
-            {errorElement}
+            {/* {errorElement} */}
             <div>
             <button
                     onClick={() => signInWithGoogle()}

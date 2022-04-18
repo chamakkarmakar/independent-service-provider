@@ -5,7 +5,16 @@ Want to see live site of the Project, Please [Click Here ](https://independent-s
 # Project Description
 * This is a legal consultation project
 * User get free consultation 
-* Technologies which are used in this Project : JSX,React
+* Selling legal services
+* To purchase a service user must need to login
+* The id on the checkout page is showing based on the selected service
+
+## Technologies
+* React  
+* React Bootstrap
+* Firebase Authentication
+* React hooks
+* React Firebase hooks
 
 ## Getting Started with Create React App
 

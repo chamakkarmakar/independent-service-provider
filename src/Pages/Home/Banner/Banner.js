@@ -18,7 +18,7 @@ const Banner = () => {
                     />
                     <Carousel.Caption>
                         <h3>I Will Fight For a Dismissal</h3>
-                    <Button href='#consult' variant="primary">Free Consultation</Button>
+                        <Button href='#consult' variant="primary" className='px-5 py-2 rounded-pill'>Free Consultation</Button>
 
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -30,7 +30,7 @@ const Banner = () => {
                     />
                     <Carousel.Caption>
                     <h3>Independene In Telling Truth Makes The Difference</h3>
-                    <Button href='#consult' variant="primary">Free Consultation</Button>
+                    <Button href='#consult' variant="primary" className='px-5 py-2 rounded-pill'>Free Consultation</Button>
 
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -42,7 +42,7 @@ const Banner = () => {
                     />
                     <Carousel.Caption>
                     <h3>Always Fight For Rights</h3>
-                    <Button href='#consult' variant="primary">Free Consultation</Button>
+                    <Button href='#consult' variant="primary" className='px-5 py-2 rounded-pill'>Free Consultation</Button>
 
                     </Carousel.Caption>
                 </Carousel.Item>

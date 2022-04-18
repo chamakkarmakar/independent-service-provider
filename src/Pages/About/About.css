@@ -17,4 +17,11 @@
     .about-me{
         flex-direction: column-reverse;
     }
+    .about-half{
+        margin: 5%;
+        padding: 5%;
+    }
+    .picture{
+        padding: 0;
+    }
 }

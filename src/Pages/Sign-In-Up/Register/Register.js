@@ -40,8 +40,8 @@ const Register = () => {
         navigate('/home');
     }
     return (
-        <div className="container mx-auto w-25 mt-5">
-            <h2>Please Register</h2>
+        <div className="container mx-auto w-50 mt-5">
+                        <h2 className=' text-center mt-2'>SIGN UP</h2>
             <Form onSubmit={handleRegister}>
                 <Form.Group className="mb-3" >
                     <Form.Control ref={nameRef} type="name" placeholder="User Name" required />
